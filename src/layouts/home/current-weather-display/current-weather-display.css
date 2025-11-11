@@ -1,0 +1,165 @@
+/* .current-weather {
+  text-align: center;
+}
+
+.weather-header {
+  margin-bottom: 24px;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.weather-icon {
+  font-size: 4rem;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.weather-description {
+  font-size: 1.2rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+} */
+
+
+.current-weather {
+  text-align: center;
+}
+
+.weather-header {
+  margin-bottom: 24px;
+}
+
+.location-info {
+  margin-bottom: 20px;
+}
+
+.city-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.country-name {
+  font-size: 1.2rem;
+  color: #667eea;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.weather-icon {
+  font-size: 4rem;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.weather-description {
+  font-size: 1.2rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.detail-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .city-name {
+    font-size: 1.5rem;
+  }
+  
+  .country-name {
+    font-size: 1rem;
+  }
+  
+  .weather-icon {
+    font-size: 3rem;
+  }
+  
+  .temperature {
+    font-size: 2.5rem;
+  }
+}
