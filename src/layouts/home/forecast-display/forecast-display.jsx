@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../../components/card";
+import Card from "../../../components/card/card";
 import {
   formatTemperature,
   getWeatherIcon,
-} from "../../utils/helpers/icon-mapper";
+} from "../../../utils/helpers/icon-mapper";
 import "./forecast-display.css";
 
 const ForecastDisplay = ({ data, currentWeather }) => {

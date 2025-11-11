@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import SearchInput from "../../layouts/common/search-input";
-import CurrentWeatherDisplay from "../../layouts/home/current-weather-display";
-import ForecastDisplay from "../../layouts/home/forecast-display";
-import Card from "../../components/card";
+import SearchInput from "../../layouts/common/search-input/search-input";
+import CurrentWeatherDisplay from "../../layouts/home/current-weather-display/current-weather-display";
+import ForecastDisplay from "../../layouts/home/forecast-display/forecast-display";
+import Card from "../../components/card/card";
 import { getCurrentWeather } from "../../api/weather/get-current";
 import { getWeatherForecast } from "../../api/weather/get-forecast";
 import "./home.css";
