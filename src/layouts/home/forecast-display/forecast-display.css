@@ -1,0 +1,91 @@
+
+
+.forecast-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forecast-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.forecast-location {
+  font-size: 1rem;
+  color: #667eea;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.forecast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.forecast-item:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.forecast-date {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.forecast-icon {
+  font-size: 2rem;
+}
+
+.forecast-temps {
+  display: flex;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.temp-high {
+  color: #667eea;
+}
+
+.temp-low {
+  color: #999;
+}
+
+.forecast-description {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .forecast-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .forecast-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+  }
+}
