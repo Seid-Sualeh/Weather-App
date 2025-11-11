@@ -6,6 +6,7 @@ import Card from "../../components/card";
 import { getCurrentWeather } from "../../api/weather/get-current";
 import { getWeatherForecast } from "../../api/weather/get-forecast";
 import "./home.css";
+import image from "../../../public/image.png"
 
 const Home = () => {
   const [city, setCity] = useState("");
@@ -100,7 +101,7 @@ const Home = () => {
         <header className="app-header">
           <div className="header-div">
             <img
-              src="../../../public/ChatGPT Image Nov 11, 2025, 12_32_47 PM.png"
+              src={image}
               className="image"
               alt=""
             />
