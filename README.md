@@ -2,7 +2,9 @@
 
 A clean, responsive React + Vite weather application that displays current weather and a 5-day forecast for searched cities. The app consumes a public weather API (OpenWeatherMap by default) and exposes a simple, accessible UI.
 
-Live demo: (add your deployed app URL here)
+Live demo:
+ [Seid Weather APP](https://seid-weather-app.vercel.app)
+
 
 ## Table of Contents
 
@@ -39,26 +41,20 @@ Live demo: (add your deployed app URL here)
 ## Prerequisites
 
 - Node.js 16+ (recommended)
-- npm (or yarn)
-- An API key from OpenWeatherMap (or another provider if configured)
+- npm 
+- An API key from OpenWeatherMap
 
 ## Installation
 
 Clone the repository, install dependencies and start the dev server:
 
 ```bash
-git clone https://github.com/your-username/weather-forecast-app.git
+git clone https://github.com/Seid-Sualeh/Weather-App.git
 cd weather-forecast-app
 npm install
 npm run dev
 ```
 
-If you use yarn:
-
-```bash
-yarn
-yarn dev
-```
 
 ## Environment variables
 
@@ -128,6 +124,14 @@ You can deploy the app to any static hosting that supports single-page apps. Ver
 3. Add the environment variables in the Vercel dashboard (the same `VITE_*` keys).
 4. Deploy — Vercel will run `npm run build` by default.
 
+## Application Preview
+
+# Mobile View
+<img src="./public/image.png" width="200">
+
+# Desktop View
+<img src="./public/image.png" width="400">
+
 ## Contributing
 
 Contributions are welcome. Suggested workflow:
@@ -145,16 +149,9 @@ This project is licensed under the MIT License — see the `LICENSE.md` file for
 
 ## Author
 
-Seid Sualeh — seidsualeh.vercel.app
+Seid Sualeh  
 
 Contact / LinkedIn: https://www.linkedin.com/in/seid-sualeh
-
+github :  https://seidsualeh.vercel.app
 ---
 
-If you'd like, I can also:
-
-- add example screenshots to `public/` and reference them in this README
-- add a short `CONTRIBUTING.md`
-- add a badge for build/deploy status once you have a CI pipeline
-
-Please tell me if you want any of the above or a tailored README (screenshots, demo links, badges).
