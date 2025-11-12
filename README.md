@@ -40,7 +40,7 @@ Live demo:
 
 ## Prerequisites
 
-- Node.js 16+ (recommended)
+- Node.js 16+ 
 - npm 
 - An API key from OpenWeatherMap
 
@@ -50,7 +50,7 @@ Clone the repository, install dependencies and start the dev server:
 
 ```bash
 git clone https://github.com/Seid-Sualeh/Weather-App.git
-cd weather-forecast-app
+cd my-weather-app
 npm install
 npm run dev
 ```
@@ -127,10 +127,10 @@ You can deploy the app to any static hosting that supports single-page apps. Ver
 ## Application Preview
 
 # Mobile View
-<img src="./public/image.png" width="200">
+<img src="./public/mobile size.png" width="200">
 
 # Desktop View
-<img src="./public/image.png" width="400">
+<img src="./public/desktop size.png" width="400">
 
 ## Contributing
 

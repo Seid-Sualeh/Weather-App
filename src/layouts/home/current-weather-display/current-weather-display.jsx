@@ -21,9 +21,9 @@ const CurrentWeatherDisplay = ({ data }) => {
       <div className="weather-header">
         <div className="location-info">
           <h2 className="city-name">{name}</h2>
-          <p className="country-name">{sys.country}</p>
-
-          <p className="country-name">{getCountryName(sys.country)}</p>
+          <p className="country-name">
+            {sys.country } , <span>{getCountryName(sys.country)}</span>
+          </p>
         </div>
         <div className="weather-main">
           <span className="weather-icon">
