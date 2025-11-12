@@ -127,10 +127,10 @@ You can deploy the app to any static hosting that supports single-page apps. Ver
 ## Application Preview
 
 # Mobile View
-<img src="./public/mobile size.png" width="200">
+<img src="./public/mobile size.png" width="200" alt="mobile view">
 
 # Desktop View
-<img src="./public/desktop size.png" width="400">
+<img src="./public/desktop size.png" width="400" alt="desktop view">
 
 ## Contributing
 
@@ -149,11 +149,14 @@ This project is licensed under the MIT License — see the `LICENSE.md` file for
 
 ## Author
 
-Seid Sualeh  
+# Seid Sualeh  Mohammed
 
 # Contact 
 
- LinkedIn: https://www.linkedin.com/in/seid-sualeh
-portfolio:  https://seidsualeh.vercel.app
+1,LinkedIn: https://www.linkedin.com/in/seid-sualeh,
+ 
+ 
+
+2, portfolio:  https://seidsualeh.vercel.app
 ---
 
