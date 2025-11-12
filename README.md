@@ -151,7 +151,9 @@ This project is licensed under the MIT License — see the `LICENSE.md` file for
 
 Seid Sualeh  
 
-Contact / LinkedIn: https://www.linkedin.com/in/seid-sualeh
-github :  https://seidsualeh.vercel.app
+# Contact 
+
+ LinkedIn: https://www.linkedin.com/in/seid-sualeh
+portfolio:  https://seidsualeh.vercel.app
 ---
 
