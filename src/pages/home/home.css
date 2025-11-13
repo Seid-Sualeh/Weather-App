@@ -122,3 +122,162 @@
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* City Local Time */
+.city-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.time-icon {
+  font-size: 0.8rem;
+}
+
+.time-text {
+  font-size: 0.9rem;
+}
+
+/* Time of Day Indicator */
+.time-of-day-indicator {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.time-of-day-icon {
+  font-size: 2rem;
+}
+
+.time-of-day-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.time-of-day-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.time-of-day-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Next Event */
+.next-event {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  border: 2px solid #ffa94d;
+}
+
+.next-event-icon {
+  font-size: 1.5rem;
+}
+
+.next-event-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.next-event-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.next-event-time {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e67e22;
+}
+
+/* Updated Sun Progress Labels */
+.sun-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sun-times {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .time-of-day-indicator {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .next-event {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  .city-time {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .time-of-day-indicator {
+    padding: 12px;
+  }
+  
+  .time-of-day-icon {
+    font-size: 1.5rem;
+  }
+  
+  .time-of-day-value {
+    font-size: 1rem;
+  }
+}
