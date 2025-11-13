@@ -22,3 +22,4 @@ export const getCountryName = (countryCode) => {
 
   return countryNames[countryCode] || countryCode;
 };
+export { getCountryName as getDisplayCountry };

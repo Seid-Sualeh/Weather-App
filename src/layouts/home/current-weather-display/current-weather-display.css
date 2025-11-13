@@ -1,71 +1,3 @@
-/* .current-weather {
-  text-align: center;
-}
-
-.weather-header {
-  margin-bottom: 24px;
-}
-
-.city-name {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 16px;
-}
-
-.weather-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 8px;
-}
-
-.weather-icon {
-  font-size: 4rem;
-}
-
-.temperature {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #667eea;
-}
-
-.weather-description {
-  font-size: 1.2rem;
-  color: #666;
-  text-transform: capitalize;
-}
-
-.weather-details {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.detail-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 12px;
-  background: #f8f9fa;
-  border-radius: 8px;
-}
-
-.detail-label {
-  font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
-}
-
-.detail-value {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-} */
-
-
 .current-weather {
   text-align: center;
 }
@@ -120,7 +52,7 @@
 
 .weather-details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
   margin-top: 24px;
 }
@@ -146,6 +78,89 @@
   color: #333;
 }
 
+/* Sun Times Styles */
+.sun-times {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+  padding: 20px;
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+  border-radius: 12px;
+  border: 1px solid #ffd699;
+}
+
+.sun-time-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.sun-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.sunrise {
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+}
+
+.sunset {
+  background: linear-gradient(135deg, #ff8c00, #8b4513);
+}
+
+.sun-time-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.sun-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.sun-time {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.day-duration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 1px dashed #ffa94d;
+}
+
+.duration-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.duration-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e67e22;
+}
+
+/* Responsive Design for Sun Times */
 @media (max-width: 768px) {
   .city-name {
     font-size: 1.5rem;
@@ -162,4 +177,112 @@
   .temperature {
     font-size: 2.5rem;
   }
+  
+  .weather-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .sun-times {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .sun-time-item {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .sun-time-info {
+    align-items: center;
+  }
+  
+  .sun-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .sun-times {
+    padding: 16px;
+  }
+}
+
+
+
+
+
+/* Time of Day Badge */
+.time-of-day-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+/* Sun Progress Bar */
+.sun-progress-container {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  border: 1px solid #ffd699;
+}
+
+.sun-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcf7f);
+  border-radius: 4px;
+  overflow: visible;
+  margin: 8px 0;
+}
+
+.sun-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.sun-progress-indicator {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 0.5s ease;
+}
+
+.current-sun {
+  font-size: 1.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.sun-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.progress-percentage {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e67e22;
+  font-weight: 600;
+  margin-top: 4px;
 }
